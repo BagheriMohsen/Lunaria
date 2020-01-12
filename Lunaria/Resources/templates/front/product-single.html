@@ -1,0 +1,582 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fa">  <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <link rel="icon" type="image/png" href="./assets/images/moon.png">
+    <title>صفحه محصول</title>
+
+    <!-- Latest compiled and minified CSS -->
+
+
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./assets/css/main.css" rel="stylesheet">
+    <link href="./assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="./assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="./assets/css/fontawsome-all.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body >
+
+	<nav class="navbar navbar-expand-sm rtl bg-white container-fluid sticky-top clearHeader" >
+
+			<!-- Brand/logo -->
+			<a class="navbar-brand d-none d-sm-block" href="#">
+					<img src="assets/images/moon.png" style="width:70px;"/>
+					<span class="text-warning dana-bold h4">
+							لوناریا
+					</span>
+			</a>
+
+					<form  action="/action_page.php">
+							<div class="container h-100">
+									<div class="d-flex justify-content-center h-100">
+											<div class="searchbar ">
+											<i class="fas fa-search " style="color:gray"></i>
+											<input class="search_input" type="text" name="" placeholder="اسم محصول،برند یا دسته بندی را جستجو کنید">
+											</div>
+									</div>
+							</div>
+					</form>
+					<ul class="navbar-nav ml-auto" >
+							<li class="nav-item d-none d-md-block ">
+									<a class="nav-link text-dark dana-regular" style="border:1px solid #e0e0e2;" href="#">
+									 <img src="./assets/images/woman.png" style="width:25px;margin-left:10px;" />
+									<span style="font-size:16px;">
+											ورود به حساب کاربری
+									</span>
+									</a>
+							</li>
+							<li class="nav-item d-none d-md-block ">
+									<a class="nav-link text-dark" data-toggle="modal" data-target="#exampleModal1">
+											 <img src="./assets/images/cart.png" style="width:25px;margin-left:10px;" />
+									</a>
+							</li>
+					</ul>
+
+	</nav>
+
+	<nav class="navbar navbar-expand-sm  rtl  navbar-sm bg-white ">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="true" aria-label="Toggle navigation">
+					<span class="fa fa-bars text-dark "></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarMenu">
+			<!-- Links -->
+					<ul class="navbar-nav ">
+							<li class="nav-item">
+									<a class="nav-link text-dark dana-regular text-center" href="#">محصولات</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link text-dark dana-regular text-center" href="#">تخفیفات</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link text-dark dana-regular text-center" href="#">محبوبترینها</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link text-dark dana-regular text-center" href="#">مشاوره خرید</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link text-dark dana-regular text-center d-md-none" href="#">
+											<img src="./assets/images/woman.png" style="width:25px;margin-left:10px;" />
+									</a>
+							</li>
+							 <li class="nav-item">
+									<a class="nav-link text-dark dana-regular text-center d-md-none" href="#">
+											<img src="./assets/images/cart.png" style="width:25px;margin-left:10px;" />
+									 </a>
+							</li>
+					</ul>
+			</div>
+	</nav>
+
+    <!-- End Navigation -->
+    <!-- Path -->
+      <ul class="navbar-nav navbar-expand-sm rtl path-nav  p-3">
+        <li class="nav-item ">
+            شما اینجایید
+            :
+        </li>
+        <li class="nav-item ">
+          <a href="#">
+            فروشگاه اینترنتی لوناریا
+
+          </a>
+					  /
+        </li>
+        <li class="nav-item">
+          <a href="#">
+          فروشگاه
+
+          </a>
+					/
+        </li>
+        <li class="nav-item">
+        <a href="#">
+          لوسیون
+        </a>
+        </li>
+      </ul>
+    <!-- END Path -->
+  <!-- section picture & sharing button and cart-->
+  <section class="container bg-white p-4  rtl ">
+    <div class="row">
+      <!-- images and sharing media -->
+        <div class="col-sm-4">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-2">
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+                <img class="share-icon pt-5" src="./assets/images/flaticon/share.png" alt="">
+              </div>
+              <div class="col-10">
+                <img src="./assets/images/test.jpg" class="width100" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- details -->
+        <div class="col-sm-4 rtl">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <!-- title -->
+                  <h6>
+                    لوسیون بدن
+                  </h6>
+                </div>
+                <!-- brand  -->
+                <div class="col-6 pt-3">
+                  <span>
+                    برند
+                  </span>
+                  <a class="dana-regular a-underscore" href="#">
+                    آردن
+                  </a>
+                </div>
+                <!-- category -->
+                <div class="col-6 pt-3">
+                  <span>
+                    دسته بندی
+                  </span>
+                  <a class="dana-regular a-underscore" href="#">
+                    آرایشی
+                  </a>
+                </div>
+                <!-- details -->
+                <div class="col-12 pt-5">
+                  <ul class="navbar-nav  rtl product-small-detail ">
+                    <li class="nav-item h5 text-dark">
+                        ویژگیها
+                        :
+                    </li>
+                    <li class="nav-item ">
+                        برای پوست چرب مثلا خیلی خوبه
+                    </li>
+                    <li class="nav-item ">
+                        برای پوست چرب مثلا خیلی خوبه
+                    </li>
+                    <li class="nav-item ">
+                        برای پوست چرب مثلا خیلی خوبه
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- cart options -->
+        <div class="col-sm-4 bg-sec-color pt-5 pb-5 ">
+          <div class="container-fluid"
+            <div class="row">
+              <div class="col-12 pb-3 ">
+                  <img class="product-icon " src="./assets/images/flaticon/guarantee.png" alt="">
+                  <span >گارانتی اصالت و سلامت فیزیکی کالا</span>
+              </div>
+              <div class="col-12 pb-3">
+                  <img class="product-icon " src="./assets/images/flaticon/exchange.png" alt="">
+                  <span >ضمانت و گارانتی قیمت</span>
+              </div>
+              <div class="col-12 pb-3">
+                  <img class="product-icon " src="./assets/images/flaticon/delivery-truck.png" alt="">
+                  <span >ارسال رایگان با خرید بالای 150 هزارتومان</span>
+              </div>
+              <div class="col-12 pb-3">
+                  <img class="product-icon " src="./assets/images/flaticon/money.png" alt="">
+                  <span >پرداخت امن از تمام کارتهای عضو شتاب</span>
+              </div>
+              <div class="col-12 pb-3 text-center h5">
+                  <span>
+                    قیمت مصرف کننده
+                    :
+                  </span>
+                  <span class="text-danger BYekan" >18000 تومان</span>
+              </div>
+              <div class="btn-group col-12 bg-success "  >
+                  <a class="btn ">
+                      <img class="product-addcart-icon" src="./assets/images/flaticon/shopping-cart.png" alt="">
+                  </a>
+                  <a style="margin:auto;" class="btn  col-12 text-center text-light dana-bold">
+                      افزودن به سبد خرید
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- section picture & sharing button and cart -->
+
+  <!-- brand information box -->
+  <section class="container bg-white mt-5 rtl">
+    <div class="row">
+      <div class="col-12 p-5">
+        <h5>
+          <img class="review-menu-icon" src="./assets/images/flaticon/info.png" alt="">
+          درباره برند
+        <hr style="border:1px solid gray" />
+        </h5>
+        <div class="p-5">
+          لابراتوار نوروا یک برند لوازم آرایشی و درمانی است که در سال 1991 درپاریس شروع به کار کرد.حالا با بیش از 20 سال تجربه و کار مداوم نوروا یکی از پیشتازان صنعت درماتولوژی می باشد. فعالیت نوروا به عنوان پیشتاز در زمینه تولید محصولات درماتولوژی انتظارات پزشکان، داروسازان و درماتولوژیست ها را براورده کرده و محصولات درمانی این شرکت طرفداران بسیار زیادی را برای آنها به ارمغان آورده است. اکتی پور یکی از موفق ترین خط تولید های نوروا بوده که با داشتن محصولاتی برای کنترل چربی و از بین بردن جوش و آکنه از سردمداران بازارهای جهانی شده است.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- brand information box -->
+
+  <!-- product like this -->
+  <section class="container pb-1 pt-5 pb-5 rtl ">
+    <div class="row">
+      <strong class=" pt-3">
+          محصولات مرتبط
+          <hr width="150px" style="border:1px solid red"/>
+      </strong>
+      <div class="owl-carousel owl-theme">
+
+              <div class="item">
+                      <div class="card">
+
+                          <a class="text-dark" href="">
+                              <img src="./assets/images/test.jpg" style="height:250px;width:100%;" />
+                          </a>
+                      </div>
+
+                          <div class="card-footer  bg-white text-center lunaria-hover-footer" style="height:150px;">
+                                  <div>
+                                      <a class="text-dark" href="">
+                                          لاک گلدن رز مدل EXPERT شماره 08
+                                      </a>
+                                      <div class="col-12 ">
+                                          <p class="text-center BYekan" style="font-size:20px;">
+                                              180,000
+                                          </p>
+                                      </div>
+                                      <div style="float:right">
+                                          <span class="fa fa-star text-warning"></span>
+                                          <span class="fa fa-star text-warning"></span>
+                                          <span class="fa fa-star text-warning"></span>
+                                          <span class="fa fa-star text-warning"></span>
+                                          <span class="fa fa-star text-warning"></span>
+                                      </div>
+                                      <div style="float:left">
+                                          <a href="">
+                                              <img src="./assets/images/cart.png" style="width:25px;margin-left:10px;" />
+                                          </a>
+                                      </div>
+
+                                  </div>
+
+                          </div>
+
+                  </div>
+
+
+              </div>
+
+    </div>
+  </section>
+  <!-- product like this -->
+  <!-- review and comment -->
+  <section class="container rtl bg-white product-review">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">
+          <img class="review-menu-icon" src="./assets/images/flaticon/glasses.png" alt="">
+          توضیحات کالا
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">
+          <img class="review-menu-icon" src="./assets/images/flaticon/brochure.png" alt="">
+          نحوه استفاده
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">
+          <img class="review-menu-icon" src="./assets/images/flaticon/comments.png" alt="">
+          نظرات کاربران
+      </a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content pt-5 pb-5 mb-5">
+    <div id="home" class="container tab-pane active"><br>
+      <h6>
+          توضیح در مورد لوسیون بدن
+      </h6>
+      <p>
+          متن ساختگی برای تست متن ساختگی برای تست متن ساختگی برای تست
+      </p>
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h6>
+          نحوه استفاده لوسیون بدن
+      </h6>
+      <p>
+
+      </p>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h6>لطفا نظر خود را با بقیه به اشتراک بگذارید</h6>
+      <div class="container-fluid pt-5">
+        <div class="row">
+
+          <div class="col-sm-2">
+              <img class="comment-avatar" src="./assets/images/girl.png" alt="">
+              <div class="p-2">
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+              </div>
+
+          </div>
+          <div class="col-sm-10">
+              <strong>
+                نظرم در مورد این محصول
+              </strong>
+              <p>
+                  لورم ایپسوم لورم ایپسوم لورم ایپسوم لوزم ایپسوم لورم ایپسوم
+                  لورم ایپسوم لورم ایپسوم لورم ایپسوم لوزم ایپسوم لورم ایپسوم
+                  لورم ایپسوم لورم ایپسوم لورم ایپسوم لوزم ایپسوم لورم ایپسوم
+                  لورم ایپسوم لورم ایپسوم لورم ایپسوم لوزم ایپسوم لورم ایپسوم
+              </p>
+          </div>
+          <div class="col-sm-12" style="font-size:14px;float:right" class="text-secondary BYekan" >
+              <div class="p-1">
+                <span class="lunaria-text-dark">
+                  ارسال شده در تاریخ
+                  :
+                </span>
+                <span>
+                  سوم خرداد 98
+                </span>
+              </div>
+              <div class="pt-1">
+                <span class="lunaria-text-dark">توسط:</span>
+                <span>
+                  فلانی فلان نژاد
+                </span>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- review and comment -->
+          <!--Footer-->
+            <section class="container-fluid p-5 bg-dark rtl ">
+                <div class="row">
+                    <!--first col-->
+                        <div class="col-sm-4">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <!--abour lunaria-->
+                                    <div class="col-12">
+                                        <h6 class="text-light">
+                                            درباره لوناریا
+                                        </h6>
+                                        <p class="text-light">
+                                        این یک متن ساختگی ست این یک متن ساختگی ست این یک متن ساختگی ست این یک متن ساختگی ست این یک متن ساختگی ست
+                                        </p>
+                                    </div>
+                                    <!--email-->
+                                    <div class="col-12 pt-5">
+                                        <h6 class="text-light pt-5 pb-2">
+                                            دریافت لیست تخفیفات هفتگی
+                                        </h6>
+                                        <form class="form-group input-group">
+                                            <input type="email" class="col-10 text-left" placeholder="example@gmail.com" />
+                                            <button type="submit" class="btn lunaria-dark text-light">
+                                                <i class="far fa-envelope "></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--second col-->
+                        <div class="col-sm-4">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 text-light text-center pb-3">
+                                        <h5>
+                                            راهنمای خرید از فروشگاه اینترنتی لوناریا
+                                        </h5>
+
+                                    </div>
+                                    <div class="col-12 text-left">
+                                           <div class="container-fluid">
+                                                <div class="row">
+                                                   <a href="" class="text-light dana-regular col-12">
+                                                        کالا در چه بازه زمانی و چطور ارسال میشود؟
+                                                   </a>
+                                                   <a href="" class="text-light dana-regular col-12">
+                                                        کالا در چه بازه زمانی و چطور ارسال میشود؟
+                                                   </a>
+                                                   <a href="" class="text-light dana-regular col-12">
+                                                        کالا در چه بازه زمانی و چطور ارسال میشود؟
+                                                   </a>
+                                                   <a href="" class="text-light dana-regular col-12">
+                                                        کالا در چه بازه زمانی و چطور ارسال میشود؟
+                                                   </a>
+                                                   <a href="" class="text-light dana-regular col-12">
+                                                        کالا در چه بازه زمانی و چطور ارسال میشود؟
+                                                   </a>
+                                                </div>
+                                                <div class="row pt-5">
+                                                    <div class="col-3">
+                                                        <img src="./assets/images/footer/makeup.png" class="width100" />
+                                                        <br />
+                                                        <a href="" class="text-light">
+                                                            محصولات
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img src="./assets/images/footer/beauty-treatment.png" class="width100" />
+                                                        <br />
+                                                        <a href="" class="text-light">
+                                                            مشاوره رایگان
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img src="./assets/images/footer/online-shop.png" class="width100" />
+                                                        <br />
+                                                        <a href="" class="text-light">
+                                                            تخفیفات
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img src="./assets/images/footer/lipstick.png" class="width100" />
+                                                        <br />
+                                                        <a href="" class="text-light">
+                                                            محبوبها
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--third col-->
+                        <div class="col-sm-4">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 ">
+                                        <div class="btn-group  " style="width:200px;background-color:#0088cc;">
+                                            <a style="margin:auto;" class="btn col-12 text-center text-light dana-bold ">
+                                            تلگرام
+                                            </a>
+                                            <a class="btn">
+                                                <i class="fab fa-telegram-plane text-light fa-3x"></i>
+                                            </a>
+                                        </div>
+                                        <div class="btn-group " style="width:200px;background-color:#bd081c">
+                                            <a class="btn ">
+                                                <i class="fab fa-instagram text-light fa-3x"></i>
+                                            </a>
+                                            <a style="margin:auto;" class="btn  col-12 text-center text-light dana-bold">
+                                                اینستاگرام
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--second col-->
+                                    <div class="col-12 p-3">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img class="width100" style="height:180px;" src="./assets/images/e-nemad.jpg" />
+                                                </div>
+                                                <div class="col-6">
+                                                    <img class="width100" style="height:180px;" src="./assets/images/zarinpal.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <div class="container-fluid bg-dark rtl">
+                <div class="text-center text-light">
+                        کلیه حقوق مادی و معنوی محتوای وبسایت طبق قوانین جمهوری اسلامی ایران برای فروشگاه اینترنتی لوناریا محفوظ است.
+                </div>
+            </div>
+          <!--END Footer-->
+
+    	<!-- START JAVASCRIPT -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <!--FOntAwsome-->
+         <script src="./assets/js/fontawsome-all.js"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                rtl:true,
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+        </script>
+
+
+    </body>
+    </html>
