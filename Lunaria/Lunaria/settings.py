@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+from django.apps import apps
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'tinymce', #Tiny WYSIWYG
+    'Shop.apps.ShopConfig',
     #Clean Removed Medias
     'django_cleanup.apps.CleanupConfig',
 ]
@@ -78,8 +79,11 @@ WSGI_APPLICATION = 'Lunaria.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Lunaria',
+        'USER': 'root',
+        'PASS': '',
+        'HOST': '127.0.0.1'
     }
 }
 

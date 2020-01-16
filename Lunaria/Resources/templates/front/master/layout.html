@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fa">  <!--<![endif]-->
+<head>
+    {% load static %}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <link rel="icon" type="image/png" href="{% static 'front/images/moon.png' %}">
+    <title>فروشگاه</title>
+
+    <!-- Latest compiled and minified CSS -->
+
+    {% include 'front/master/styles.html' %}
+    {% block styles %}{% endblock %}
+
+</head>
+<body class="bg-sec-color">
+
+    {% include 'front/master/navbar.html' %}
+
+    {% include 'front/master/path.html' %}
+
+    {% block content %}{% endblock %}
+  
+    {% include 'front/master/footer.html' %}
+  
+
+
+	{% include 'front/master/scripts.html' %}
+
+    <!--brand search js-->
+        <script>
+            function myFunction() {
+                var input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                    }
+                }
+            }
+        </script>
+         <!--price slider-->
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+            output.innerHTML = this.value;
+            }
+        </script>
+
+
+</body>
+</html>
