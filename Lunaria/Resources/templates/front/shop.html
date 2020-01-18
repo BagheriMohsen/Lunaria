@@ -1,6 +1,10 @@
 {% extends 'front/master/layout.html' %}
 {% load static %}
 
+{% block title %}
+  {{'فروشگاه'}}
+{% endblock %}
+
 {% block content %}
 <div class="container bg-white mb-5 ">
     <div class="row">
@@ -366,6 +370,38 @@
 
 {% endblock %}
 
-    
+{% block scripts %}
+     <!--brand search js-->
+        <script>
+            function myFunction() {
+                var input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                    }
+                }
+            }
+        </script>
+         <!--price slider-->
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+            output.innerHTML = this.value;
+            }
+        </script>
+{% endblock %}
 
    

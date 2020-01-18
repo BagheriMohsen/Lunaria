@@ -1,8 +1,9 @@
+{% load static %}
 <nav class="navbar navbar-expand-sm rtl bg-white container-fluid sticky-top clearHeader" >
 
     <!-- Brand/logo -->
     <a class="navbar-brand d-none d-sm-block" href="#">
-        <img src="assets/images/moon.png" style="width:70px;"/>
+        <img src="{% static 'front/images/moon.png' %}" style="width:70px;"/>
         <span class="text-warning dana-bold h4">
             لوناریا
         </span>
@@ -21,7 +22,7 @@
         <ul class="navbar-nav ml-auto" >
             <li class="nav-item d-none d-md-block ">
                 <a class="nav-link text-dark dana-regular" style="border:1px solid #e0e0e2;" href="#">
-                 <img src="./assets/images/woman.png" style="width:25px;margin-left:10px;" />
+                 <img src="{% static 'front/images/woman.png' %}" style="width:25px;margin-left:10px;" />
                 <span style="font-size:16px;">
                     ورود به حساب کاربری
                 </span>
@@ -29,7 +30,7 @@
             </li>
             <li class="nav-item d-none d-md-block ">
                 <a class="nav-link text-dark" data-toggle="modal" data-target="#exampleModal1">
-                     <img src="./assets/images/cart.png" style="width:25px;margin-left:10px;" />
+                     <img src="{% static 'front/images/cart.png' %}" style="width:25px;margin-left:10px;" />
                 </a>
             </li>
         </ul>

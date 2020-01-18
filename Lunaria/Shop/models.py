@@ -2,7 +2,7 @@ from django.db import models
 from django.db.models import Model
 from tinymce import models as tinymce_models
 # Create your models here.
-class Shop(Model):
+class Product(Model):
     title       =   models.CharField(max_length=255,verbose_name="نام محصول")
     slug        =   models.SlugField(editable=False)
     desc        =   models.TextField(verbose_name="توضیحات",help_text="توضیحات جزئی برای نمایش یادداشت کنید")
